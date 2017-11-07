@@ -1,9 +1,8 @@
-# SFML_RPG_1
-SFML Roll Playing Game (RPG)
+# SFML RPG
 
-Very first RPG. 
+Very first RPG. :)
 
-11/4/17 - 
+**11/4/17 -**
 
     Projectiles Added.
     
