@@ -16,6 +16,8 @@
 #include <vector>
 using namespace std;
 
+// Every game object will inhert from this class. 
+
 class entity
 {
 public:
@@ -27,4 +29,4 @@ public:
 
 };
 
-#endif /* defined(__InstallingSFML__entity__) */
+#endif

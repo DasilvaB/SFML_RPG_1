@@ -10,6 +10,8 @@
 		BE5AE6011F9D9604001BF868 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6001F9D9604001BF868 /* ResourcePath.mm */; };
 		BE5AE6171F9D9649001BF868 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6131F9D9649001BF868 /* player.cpp */; };
 		BE5AE6181F9D9649001BF868 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6161F9D9649001BF868 /* main.cpp */; };
+		BE5AE6351FB11F85001BF868 /* Hero.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5AE6341FB11F85001BF868 /* Hero.png */; };
+		BE5AE6381FB12557001BF868 /* Projectile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6361FB12557001BF868 /* Projectile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		BE5AE6141F9D9649001BF868 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		BE5AE6151F9D9649001BF868 /* entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entity.h; sourceTree = "<group>"; };
 		BE5AE6161F9D9649001BF868 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BE5AE6341FB11F85001BF868 /* Hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hero.png; sourceTree = "<group>"; };
+		BE5AE6361FB12557001BF868 /* Projectile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Projectile.cpp; sourceTree = "<group>"; };
+		BE5AE6371FB12557001BF868 /* Projectile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Projectile.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,8 @@
 				BE5AE6141F9D9649001BF868 /* player.h */,
 				BE5AE6151F9D9649001BF868 /* entity.h */,
 				BE5AE6161F9D9649001BF868 /* main.cpp */,
+				BE5AE6361FB12557001BF868 /* Projectile.cpp */,
+				BE5AE6371FB12557001BF868 /* Projectile.hpp */,
 				BE5AE6001F9D9604001BF868 /* ResourcePath.mm */,
 				BE5AE6021F9D9604001BF868 /* ResourcePath.hpp */,
 				BE5AE6051F9D9604001BF868 /* Resources */,
@@ -76,6 +83,7 @@
 		BE5AE6051F9D9604001BF868 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE5AE6341FB11F85001BF868 /* Hero.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5AE6351FB11F85001BF868 /* Hero.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5AE6381FB12557001BF868 /* Projectile.cpp in Sources */,
 				BE5AE6171F9D9649001BF868 /* player.cpp in Sources */,
 				BE5AE6011F9D9604001BF868 /* ResourcePath.mm in Sources */,
 				BE5AE6181F9D9649001BF868 /* main.cpp in Sources */,

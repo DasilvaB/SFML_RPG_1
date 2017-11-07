@@ -1,5 +1,6 @@
 #include "player.h"
 
+// Constructor. Handles the setup of the sprite.
 player::player()
 {
 	rect.setSize(sf::Vector2f(32, 32));
@@ -11,19 +12,22 @@ player::player()
 	source.x = 0;
 	source.y = Down;
 
-	if (!characterTexture.loadFromFile("hero.png"))
+	if (!characterTexture.loadFromFile(resourcePath() + "hero.png"))
 	{
 		std::cout << "Failed to load hero.png" << std::endl;
 	}
 
 	sprite.setTexture(characterTexture);
+    sprite.setScale(2,2);
 }
 
+// Updates the position of the player every frame
 void player::update()
 {
 	sprite.setPosition(rect.getPosition());
 }
 
+// Movement of player. Handles movement based on speed of computer using Clock.
 void player::movement() 
 {
 	sf::Time time;
@@ -34,6 +38,7 @@ void player::movement()
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 		{
 			source.y = Up;
+            direction = 1; // ---- See Notes
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
 			{
 				rect.move(0, -5);
@@ -52,6 +57,7 @@ void player::movement()
 		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
 		{
 			source.y = Down;
+            direction = 2; // ---- See Notes
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
 			{
 				rect.move(0, 5);
@@ -70,6 +76,7 @@ void player::movement()
 		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 		{
 			source.y = Left;
+            direction = 3; // ---- See Notes
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
 			{
 				rect.move(-5, 0);
@@ -88,6 +95,7 @@ void player::movement()
 		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 		{
 			source.y = Right;
+            direction = 4;  // ---- See Notes
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
 			{
 				rect.move(5, 0);
@@ -115,6 +123,7 @@ void player::movement()
 			source.x = 0;
 		clock.restart();
 	}
-
-	std::cout << source.x << " " << source.y << std::endl;
+    
+    // Shows which part of spritesheet is being used. For debugging movement.
+	//std::cout << source.x << " " << source.y << std::endl;
 }
