@@ -31,9 +31,8 @@ public:
     // Main player methods
 	void update();
 	void movement();
-    
-    float getPosition();
 
+    sf::Vector2f getPosition();
 };
 
 #endif 

@@ -15,17 +15,7 @@ int main() {
 	sf::Clock clock;
 
 	player mainPlayer;
-    
-    int counter = 0;
-    int counter2 = 0;
-    int counter3 = 0;
-    
-    // vector to hold projectiles as well as an iterator to go through it.
-    vector<Projectile>::const_iterator iter;
-    vector<Projectile> projectiles;
-    
-    // Projectile
-    Projectile projectile1;
+    Projectile projectile; 
 
     // Game loop
 	while (window.isOpen())
@@ -42,30 +32,15 @@ int main() {
 
 		//Movement for palyer
 		mainPlayer.movement();
+        
+        //Fire projectile
+        projectile.fire(mainPlayer, window);
 
 		//Update Player
 		mainPlayer.update();
 
 		//Draw Player
 		window.draw(mainPlayer.sprite);
-        
-        //Fires missles when pressing space bar
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
-        {
-            projectile1.rect.setPosition(200,200);
-            projectile1.direction = mainPlayer.direction;
-            projectiles.push_back(projectile1);
-        }
-        
-        counter = 0;
-        for(iter = projectiles.begin(); iter != projectiles.end(); iter++)
-        {
-            projectiles[counter].update(); // Update projectile
-            window.draw(projectiles[counter].rect);
-            
-            counter++;
-        }
-        
         
 		window.display();
 		window.clear();

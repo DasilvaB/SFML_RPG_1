@@ -27,6 +27,12 @@ void player::update()
 	sprite.setPosition(rect.getPosition());
 }
 
+// Returns the players position
+sf::Vector2f player::getPosition()
+{
+    return sprite.getPosition();
+}
+
 // Movement of player. Handles movement based on speed of computer using Clock.
 void player::movement() 
 {
