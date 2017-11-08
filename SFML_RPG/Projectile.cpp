@@ -15,7 +15,7 @@ Projectile::Projectile() {
 
 }
 
-// Moves the projectile 
+// Moves the projectile
 void Projectile::update() {
     if(direction == 1)
     {
