@@ -12,3 +12,17 @@ Very first RPG. :)
       - Projectiles need to be set to the players position
       - Set setters/getters for needed variables (lol rip).
       - Projectiles non-stop spawning (see space bar, maybe error?).
+      
+**11/6/17 -**
+
+    Fixed errors:
+      - Projectiles out of main loop
+      - Fixed conversion error with rect.getPosition
+      - Projectiles spawn on main player
+      - Projectiles don't non-stop spawn anymore.
+      
+    Current changes needed:
+      - Create world class
+      - Create game class
+      - Change entity class so its more in depth. (lots of recurring code between enemies/other characters)
+  
