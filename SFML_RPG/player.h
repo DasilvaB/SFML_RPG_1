@@ -3,7 +3,7 @@
 #ifndef __player__
 #define __player__
 
-#include "entity.h"
+#include "entity.hpp"
 #include "ResourcePath.hpp"
 
 class player : public entity

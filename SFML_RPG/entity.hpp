@@ -16,17 +16,17 @@
 #include <vector>
 using namespace std;
 
-// Every game object will inhert from this class. 
+// Every game object will inhert from this class.
 
 class entity
 {
 public:
-
-	//Physical object
-	sf::RectangleShape rect;
-	sf::Sprite sprite;
-	sf::Text text;
-
+    
+    //Physical object
+    sf::RectangleShape rect;
+    sf::Sprite sprite;
+    sf::Text text;
+    
 };
 
 #endif

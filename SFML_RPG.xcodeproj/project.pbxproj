@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE08781A1FB359500015F728 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE0878181FB3594F0015F728 /* Enemy.cpp */; };
 		BE5AE6011F9D9604001BF868 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6001F9D9604001BF868 /* ResourcePath.mm */; };
 		BE5AE6171F9D9649001BF868 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6131F9D9649001BF868 /* player.cpp */; };
 		BE5AE6181F9D9649001BF868 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6161F9D9649001BF868 /* main.cpp */; };
@@ -15,13 +16,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE0878181FB3594F0015F728 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
+		BE0878191FB359500015F728 /* Enemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Enemy.hpp; sourceTree = "<group>"; };
+		BE0878231FB528DE0015F728 /* entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = entity.hpp; sourceTree = "<group>"; };
 		BE5AE5FB1F9D9604001BF868 /* SFML_RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFML_RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5AE5FF1F9D9604001BF868 /* SFML_RPG-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML_RPG-Info.plist"; sourceTree = "<group>"; };
 		BE5AE6001F9D9604001BF868 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		BE5AE6021F9D9604001BF868 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		BE5AE6131F9D9649001BF868 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
 		BE5AE6141F9D9649001BF868 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
-		BE5AE6151F9D9649001BF868 /* entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entity.h; sourceTree = "<group>"; };
 		BE5AE6161F9D9649001BF868 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BE5AE6341FB11F85001BF868 /* Hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hero.png; sourceTree = "<group>"; };
 		BE5AE6361FB12557001BF868 /* Projectile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Projectile.cpp; sourceTree = "<group>"; };
@@ -39,6 +42,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE08781B1FB528040015F728 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BE0878231FB528DE0015F728 /* entity.hpp */,
+				BE5AE6141F9D9649001BF868 /* player.h */,
+				BE0878191FB359500015F728 /* Enemy.hpp */,
+				BE5AE6371FB12557001BF868 /* Projectile.hpp */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		BE08781C1FB528400015F728 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BE5AE6131F9D9649001BF868 /* player.cpp */,
+				BE5AE6361FB12557001BF868 /* Projectile.cpp */,
+				BE0878181FB3594F0015F728 /* Enemy.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		BE5AE5F11F9D9604001BF868 = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +82,9 @@
 		BE5AE5FD1F9D9604001BF868 /* SFML_RPG */ = {
 			isa = PBXGroup;
 			children = (
-				BE5AE6131F9D9649001BF868 /* player.cpp */,
-				BE5AE6141F9D9649001BF868 /* player.h */,
-				BE5AE6151F9D9649001BF868 /* entity.h */,
+				BE08781C1FB528400015F728 /* Source */,
+				BE08781B1FB528040015F728 /* Headers */,
 				BE5AE6161F9D9649001BF868 /* main.cpp */,
-				BE5AE6361FB12557001BF868 /* Projectile.cpp */,
-				BE5AE6371FB12557001BF868 /* Projectile.hpp */,
 				BE5AE6001F9D9604001BF868 /* ResourcePath.mm */,
 				BE5AE6021F9D9604001BF868 /* ResourcePath.hpp */,
 				BE5AE6051F9D9604001BF868 /* Resources */,
@@ -176,6 +197,7 @@
 			files = (
 				BE5AE6381FB12557001BF868 /* Projectile.cpp in Sources */,
 				BE5AE6171F9D9649001BF868 /* player.cpp in Sources */,
+				BE08781A1FB359500015F728 /* Enemy.cpp in Sources */,
 				BE5AE6011F9D9604001BF868 /* ResourcePath.mm in Sources */,
 				BE5AE6181F9D9649001BF868 /* main.cpp in Sources */,
 			);
