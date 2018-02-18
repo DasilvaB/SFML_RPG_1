@@ -1,10 +1,13 @@
 # SFML RPG
 
 **11/4/17 -**
-
-    Projectiles Added.
     
-    Errors:
+    Fixed errors:
+      
+    Updates:
+      - Projectiles Added.
+    
+    Issues:
       - Need to take projectiles out of main loop
       - When return rect.getPosition, says its a vector2f not a float. (Conversion error).
       - Projectiles need to be set to the players position
@@ -19,7 +22,9 @@
       - Projectiles spawn on main player
       - Projectiles don't non-stop spawn anymore.
       
-    Current changes needed:
+    Updates:
+      
+    Current Changes Needed:
       - Create world class
       - Create game class
       - Change entity class so its more in depth. (lots of recurring code between enemies/other characters)
