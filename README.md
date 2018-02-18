@@ -1,7 +1,5 @@
 # SFML RPG
 
-Very first RPG. :)
-
 **11/4/17 -**
 
     Projectiles Added.
