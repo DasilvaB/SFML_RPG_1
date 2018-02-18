@@ -14,6 +14,8 @@
       - Set setters/getters for needed variables (lol rip).
       - Projectiles non-stop spawning (see space bar, maybe error?).
       
+    Current Changes Needed:
+      
 **11/6/17 -**
 
     Fixed errors:
@@ -23,6 +25,8 @@
       - Projectiles don't non-stop spawn anymore.
       
     Updates:
+    
+    Issues:
       
     Current Changes Needed:
       - Create world class
@@ -32,11 +36,14 @@
 **02/17/18 -**
 
     Fixed errors:
-      - Created World class
-      - Created Game Class
      
     Updates:
-      - Removed Projectiles, Needs overhaul 
+      - Removed Projectiles, Needs overhaul
+      - Created World class
+      - Created Game Class
+      
+    Issues:
+      - Projectile needs rework
     
     Current Changes Needed:
       - Implement game engine components(See notes).
