@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef __player__
-#define __player__
+#ifndef Enemy_h
+#define Enemy_h
 
 #include "entity.hpp"
 #include "ResourcePath.hpp"
@@ -14,11 +14,11 @@ public:
     // Used to position player based on which direction hes facing.
     enum Direction { Down, Left, Right, Up };
     
-    // Player attributes
+    // Enemy attributes
     int movementSpeed = 0;
     int attackDamage = 5;
     
-    // direction for projectile --- See notes
+    // direction for projectile --- 1 up, 2 down,3 left, 4 right --- see notes for more info
     int direction = 0;
     
     // Clocks for speed control. Used to prevent lagg on slower computers.
@@ -33,6 +33,12 @@ public:
     void movement();
     
     sf::Vector2f getPosition();
+    
+private:
+    
+    // vector to hold projectiles as well as an iterator to go through it.
+    vector<Enemy>::const_iterator iter;
+    vector<Enemy> projectiles;
 };
 
-#endif 
+#endif /* Enemy_h */
