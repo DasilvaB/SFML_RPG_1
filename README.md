@@ -23,4 +23,18 @@
       - Create world class
       - Create game class
       - Change entity class so its more in depth. (lots of recurring code between enemies/other characters)
+      
+**02/17/18 -**
+
+    Fixed errors:
+      - Created World class
+      - Created Game Class
+     
+    Updates:
+      - Removed Projectiles, Needs overhaul 
+    
+    Current Changes Needed:
+      - Implement game engine components(See notes).
+      
+  
   
