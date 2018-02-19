@@ -10,6 +10,7 @@
 		BE08781A1FB359500015F728 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE0878181FB3594F0015F728 /* Enemy.cpp */; };
 		BE14C3AD2038AA30009534A8 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3AB2038AA30009534A8 /* Game.cpp */; };
 		BE14C3B02038AAC3009534A8 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3AE2038AAC3009534A8 /* Window.cpp */; };
+		BE14C3B6203B2505009534A8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3B4203B2505009534A8 /* InputManager.cpp */; };
 		BE5AE6011F9D9604001BF868 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6001F9D9604001BF868 /* ResourcePath.mm */; };
 		BE5AE6171F9D9649001BF868 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6131F9D9649001BF868 /* player.cpp */; };
 		BE5AE6181F9D9649001BF868 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6161F9D9649001BF868 /* main.cpp */; };
@@ -25,6 +26,8 @@
 		BE14C3AC2038AA30009534A8 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		BE14C3AE2038AAC3009534A8 /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
 		BE14C3AF2038AAC3009534A8 /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		BE14C3B4203B2505009534A8 /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		BE14C3B5203B2505009534A8 /* InputManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
 		BE5AE5FB1F9D9604001BF868 /* SFML_RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFML_RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5AE5FF1F9D9604001BF868 /* SFML_RPG-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML_RPG-Info.plist"; sourceTree = "<group>"; };
 		BE5AE6001F9D9604001BF868 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		BE14C3B22038AE76009534A8 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				BE14C3B5203B2505009534A8 /* InputManager.hpp */,
 				BE14C3AC2038AA30009534A8 /* Game.hpp */,
 				BE14C3AF2038AAC3009534A8 /* Window.hpp */,
 			);
@@ -93,6 +97,7 @@
 			children = (
 				BE14C3AB2038AA30009534A8 /* Game.cpp */,
 				BE14C3AE2038AAC3009534A8 /* Window.cpp */,
+				BE14C3B4203B2505009534A8 /* InputManager.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				BE5AE6381FB12557001BF868 /* Projectile.cpp in Sources */,
 				BE5AE6171F9D9649001BF868 /* player.cpp in Sources */,
 				BE08781A1FB359500015F728 /* Enemy.cpp in Sources */,
+				BE14C3B6203B2505009534A8 /* InputManager.cpp in Sources */,
 				BE14C3AD2038AA30009534A8 /* Game.cpp in Sources */,
 				BE5AE6011F9D9604001BF868 /* ResourcePath.mm in Sources */,
 				BE5AE6181F9D9649001BF868 /* main.cpp in Sources */,
