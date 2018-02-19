@@ -48,5 +48,18 @@
     Current Changes Needed:
       - Implement game engine components(See notes).
       
+**02/19/18 -**
+
+    Fixed errors:
+     
+    Updates:
+      - Started InputManger
+      
+    Issues:
+      - Projectile needs rework
+    
+    Current Changes Needed:
+      - Implement game engine components(See notes).
+      
   
   
