@@ -11,11 +11,13 @@
 		BE14C3AD2038AA30009534A8 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3AB2038AA30009534A8 /* Game.cpp */; };
 		BE14C3B02038AAC3009534A8 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3AE2038AAC3009534A8 /* Window.cpp */; };
 		BE14C3B6203B2505009534A8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3B4203B2505009534A8 /* InputManager.cpp */; };
+		BE14C3E32049CA95009534A8 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3E12049CA95009534A8 /* Map.cpp */; };
+		BE14C3F02049D75B009534A8 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE14C3EF2049D75B009534A8 /* level1.txt */; };
+		BE14C3F22049DEBF009534A8 /* tileSet1.png in Resources */ = {isa = PBXBuildFile; fileRef = BE14C3F12049DEBF009534A8 /* tileSet1.png */; };
 		BE5AE6011F9D9604001BF868 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6001F9D9604001BF868 /* ResourcePath.mm */; };
 		BE5AE6171F9D9649001BF868 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6131F9D9649001BF868 /* player.cpp */; };
 		BE5AE6181F9D9649001BF868 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6161F9D9649001BF868 /* main.cpp */; };
 		BE5AE6351FB11F85001BF868 /* Hero.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5AE6341FB11F85001BF868 /* Hero.png */; };
-		BE5AE6381FB12557001BF868 /* Projectile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6361FB12557001BF868 /* Projectile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		BE14C3AF2038AAC3009534A8 /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
 		BE14C3B4203B2505009534A8 /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
 		BE14C3B5203B2505009534A8 /* InputManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
+		BE14C3E12049CA95009534A8 /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		BE14C3E22049CA95009534A8 /* Map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Map.hpp; sourceTree = "<group>"; };
+		BE14C3EF2049D75B009534A8 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level1.txt; path = "../../../Library/Developer/Xcode/DerivedData/SFML_RPG-bzwbyamhgeoegkbljzrontpoemyv/Build/Products/Debug/level1.txt"; sourceTree = "<group>"; };
+		BE14C3F12049DEBF009534A8 /* tileSet1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tileSet1.png; path = ../../tileSet1.png; sourceTree = "<group>"; };
 		BE5AE5FB1F9D9604001BF868 /* SFML_RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFML_RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5AE5FF1F9D9604001BF868 /* SFML_RPG-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML_RPG-Info.plist"; sourceTree = "<group>"; };
 		BE5AE6001F9D9604001BF868 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -36,8 +42,6 @@
 		BE5AE6141F9D9649001BF868 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		BE5AE6161F9D9649001BF868 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BE5AE6341FB11F85001BF868 /* Hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hero.png; sourceTree = "<group>"; };
-		BE5AE6361FB12557001BF868 /* Projectile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Projectile.cpp; sourceTree = "<group>"; };
-		BE5AE6371FB12557001BF868 /* Projectile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Projectile.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,6 @@
 				BE0878231FB528DE0015F728 /* entity.hpp */,
 				BE0878441FCE18A10015F728 /* Enemy.h */,
 				BE5AE6141F9D9649001BF868 /* player.h */,
-				BE5AE6371FB12557001BF868 /* Projectile.hpp */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -67,7 +70,6 @@
 			children = (
 				BE5AE6161F9D9649001BF868 /* main.cpp */,
 				BE5AE6131F9D9649001BF868 /* player.cpp */,
-				BE5AE6361FB12557001BF868 /* Projectile.cpp */,
 				BE0878181FB3594F0015F728 /* Enemy.cpp */,
 			);
 			name = Source;
@@ -76,6 +78,7 @@
 		BE14C3B12038AE6D009534A8 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				BE14C3E42049D487009534A8 /* Maps */,
 				BE14C3B32038AE79009534A8 /* Source */,
 				BE14C3B22038AE76009534A8 /* Headers */,
 			);
@@ -85,6 +88,7 @@
 		BE14C3B22038AE76009534A8 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				BE14C3E22049CA95009534A8 /* Map.hpp */,
 				BE14C3B5203B2505009534A8 /* InputManager.hpp */,
 				BE14C3AC2038AA30009534A8 /* Game.hpp */,
 				BE14C3AF2038AAC3009534A8 /* Window.hpp */,
@@ -98,8 +102,17 @@
 				BE14C3AB2038AA30009534A8 /* Game.cpp */,
 				BE14C3AE2038AAC3009534A8 /* Window.cpp */,
 				BE14C3B4203B2505009534A8 /* InputManager.cpp */,
+				BE14C3E12049CA95009534A8 /* Map.cpp */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		BE14C3E42049D487009534A8 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				BE14C3EF2049D75B009534A8 /* level1.txt */,
+			);
+			name = Maps;
 			sourceTree = "<group>";
 		};
 		BE5AE5F11F9D9604001BF868 = {
@@ -143,6 +156,7 @@
 		BE5AE6051F9D9604001BF868 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE14C3F12049DEBF009534A8 /* tileSet1.png */,
 				BE5AE6341FB11F85001BF868 /* Hero.png */,
 			);
 			name = Resources;
@@ -175,7 +189,7 @@
 		BE5AE5F21F9D9604001BF868 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Bruno Dasilva";
 				TargetAttributes = {
 					BE5AE5FA1F9D9604001BF868 = {
@@ -207,7 +221,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE14C3F02049D75B009534A8 /* level1.txt in Resources */,
 				BE5AE6351FB11F85001BF868 /* Hero.png in Resources */,
+				BE14C3F22049DEBF009534A8 /* tileSet1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,8 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE14C3B02038AAC3009534A8 /* Window.cpp in Sources */,
-				BE5AE6381FB12557001BF868 /* Projectile.cpp in Sources */,
 				BE5AE6171F9D9649001BF868 /* player.cpp in Sources */,
+				BE14C3E32049CA95009534A8 /* Map.cpp in Sources */,
 				BE08781A1FB359500015F728 /* Enemy.cpp in Sources */,
 				BE14C3B6203B2505009534A8 /* InputManager.cpp in Sources */,
 				BE14C3AD2038AA30009534A8 /* Game.cpp in Sources */,
@@ -251,14 +267,37 @@
 		BE5AE60E1F9D9604001BF868 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -268,6 +307,7 @@
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -295,14 +335,36 @@
 		BE5AE60F1F9D9604001BF868 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -342,6 +404,7 @@
 				DEVELOPMENT_TEAM = 4L78Y9B549;
 				INFOPLIST_FILE = "SFML_RPG/SFML_RPG-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BrunoDaSilva.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,6 +415,7 @@
 				DEVELOPMENT_TEAM = 4L78Y9B549;
 				INFOPLIST_FILE = "SFML_RPG/SFML_RPG-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BrunoDaSilva.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -2,6 +2,8 @@
 #include <iostream>
 #include "Game.hpp"
 
+#include "Map.hpp"
+
 int main() {
     
     Game game;
@@ -11,6 +13,7 @@ int main() {
         game.Update();
         game.Render();
         game.RestartClock();
+
     }
 
 }

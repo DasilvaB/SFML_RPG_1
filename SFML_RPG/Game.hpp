@@ -12,8 +12,8 @@
 #include <stdio.h>
 #include "Window.hpp"
 #include "player.h"
-#include "Projectile.hpp"
 #include "entity.hpp"
+#include "Map.hpp"
 
 class Game {
 public:
@@ -35,7 +35,7 @@ private:
     sf::Time elapsed;
     
     player mainPlayer;
-    
+    Map map;
 };
 
 #endif /* Game_hpp */

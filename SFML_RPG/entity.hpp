@@ -25,6 +25,7 @@ public:
     //Physical object
     sf::RectangleShape rect;
     sf::Sprite sprite;
+    
     sf::Text text;
     
 };

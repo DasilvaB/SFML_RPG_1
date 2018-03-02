@@ -24,7 +24,25 @@ bool InputManager::IsSpriteClicked(sf::Sprite object, sf::Mouse::Button button, 
     return false;
 }
 
+void InputManager::Input(sf::Event event)
+{
+    // Checks for player movement
+    if(event.type == sf::Event::KeyPressed)
+        if(event.key.code == sf::Keyboard::W &&
+           event.key.code == sf::Keyboard::A &&
+           event.key.code == sf::Keyboard::S &&
+           event.key.code == sf::Keyboard::D)
+            player::movement();
+    
+}
+
 sf::Vector2i InputManager::GetMousePosition(sf::RenderWindow &window)
 {
     return sf::Mouse::getPosition(window);
+}
+
+// Needs implementation
+void InputManager::Movement(entity &object)
+{
+   
 }

@@ -10,6 +10,12 @@
 #define InputManager_hpp
 
 #include <SFML/Graphics.hpp>
+#include "entity.hpp"
+#include "player.h"
+
+enum Direction {
+    Up, Down, Left, Right
+};
 
 class InputManager
 {
@@ -21,9 +27,17 @@ public:
     
     sf::Vector2i GetMousePosition(sf::RenderWindow &window);
     
+    void Input(sf::Event event);
+    
+    // Player methods
+    void Movement(entity &object);
+    
     
 private:
-    
+    //sf::Time time;
+    //sf::Clock clock, clock2;
+    //sf::Vector2i source;
+    //int direction = 0;
 };
 
 #endif /* InputManager_hpp */
