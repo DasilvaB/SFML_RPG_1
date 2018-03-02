@@ -63,7 +63,8 @@
       
   **03/02/18 -**
 
-    Changed a TON of stuff while adding some. Much of the code contained coupling and other issues so had to overhaul         everything.
+    Changed a TON of stuff while adding some. Much of the code contained coupling and other issues 
+    so had to overhaul everything.
     
     Fixed errors:
      
