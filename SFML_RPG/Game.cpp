@@ -14,6 +14,7 @@ Game::Game() : window("SFML RPG", sf::Vector2u(1280,1280))
     srand(time(NULL));
     map.loadAssets();
     map.readFile("level1.txt", 8, 8);
+    map.GetGrid(mapGrid);
 }
 
 Game::~Game() {}
@@ -53,18 +54,18 @@ void Game::Render()
     for(int i = 0; i < 8; i++)
         for(int j = 0; j < 8; j++)
         {
-            std::cout << map.grid[i][j] << std::endl;
-            if(map.grid[i][j] == 0)
+            std::cout << mapGrid[i][j] << std::endl;
+            if(mapGrid[i][j] == 0)
             {
                 //why is x and y reversed here? lol maybe setposition is (y,x)? idk
-                
-                map.Floor.setPosition(j*160, i*160);
-                window.Draw(map.Floor);
+
+                map.floor.setPosition(j*160, i*160);
+                window.Draw(map.floor);
             }
-            else if(map.grid[i][j] == 1)
+            else if(mapGrid[i][j] == 1)
             {
-                map.Mob1.setPosition(j*160, i*160);
-                window.Draw(map.Mob1);
+                map.mob1.setPosition(j*160, i*160);
+                window.Draw(map.mob1);
             }
         }
     

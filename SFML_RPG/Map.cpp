@@ -46,15 +46,22 @@ void Map::loadAssets()
         std::cout << "Failed to load tileSet1.png" << std::endl;
     }
     
-    Mob1.setTexture(tileSet);
-    Mob1.setTextureRect(sf::IntRect(64,64,16,16));
-    Mob1.setPosition(0, 0);
-    Mob1.setScale(10, 10);
+    mob1.setTexture(tileSet);
+    mob1.setTextureRect(sf::IntRect(64,64,16,16));
+    mob1.setPosition(0, 0);
+    mob1.setScale(10, 10);
     
-    Floor.setTexture(tileSet);
-    Floor.setTextureRect(sf::IntRect(16,16,16,16));
-    Floor.setPosition(160, 320);
-    Floor.setScale(10, 10);
+    floor.setTexture(tileSet);
+    floor.setTextureRect(sf::IntRect(16,16,16,16));
+    floor.setPosition(160, 320);
+    floor.setScale(10, 10);
+}
+
+void Map::GetGrid(int a[][8])
+{
+    for(int x = 0; x < 8; x++)
+        for(int y = 0; y < 8; y++)
+            a[x][y] = grid[x][y];
 }
 
 

@@ -36,6 +36,8 @@ private:
     
     player mainPlayer;
     Map map;
+    int mapGrid[][8];
+    
 };
 
 #endif /* Game_hpp */

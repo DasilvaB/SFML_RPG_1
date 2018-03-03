@@ -15,5 +15,5 @@ int main() {
         game.RestartClock();
 
     }
-
+    Map a;
 }

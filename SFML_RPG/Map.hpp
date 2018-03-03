@@ -23,20 +23,20 @@ class Map
 public:
     Map();
     
-    void createMap();
-    
     void readFile(std::string fileName, int x, int y);
     
     void loadAssets();
+
+    void GetGrid(int a[][8]);
     
     sf::Sprite tileSetSprite;
-    sf::Sprite Floor;
-    sf::Sprite Mob1;
-    
-     int grid[8][8];
+    sf::Sprite floor;
+    sf::Sprite mob1;
     
 private:
     std::fstream file;
+    
+    int grid[8][8];
 
     sf::Texture tileSet;
     
