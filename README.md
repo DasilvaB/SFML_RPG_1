@@ -61,5 +61,31 @@
     Current Changes Needed:
       - Implement game engine components(See notes).
       
+  **03/02/18 -**
+
+    Changed a TON of stuff while adding some. Much of the code contained coupling and other issues 
+    so had to overhaul everything.
+    
+    Fixed errors:
+     
+    Updates:
+      - Added Map
+      - Removed Projectiles completely 
+      - Finished InputHandling structure 
+      - Changed Player class to remove movement and other things from it.
+      
+    Issues:
+    
+    Current Changes Needed:
+      - Finish updating player class
+      - Clean up Map 
+      - Clean up small things located in code (see hand written notes)
+      
   
+  
+
+      
+  
+  
+
   
