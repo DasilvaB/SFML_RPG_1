@@ -42,7 +42,8 @@ sf::Vector2i InputManager::GetMousePosition(sf::RenderWindow &window)
 }
 
 // Needs implementation
-void InputManager::Movement(entity &object)
-{
-   
-}
+//void InputManager::movement(entity &object)
+//{
+//   
+//}
+

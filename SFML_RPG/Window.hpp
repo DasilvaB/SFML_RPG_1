@@ -26,6 +26,8 @@ public:
     
     void Update();
     
+    sf::Vector2i GetMousePosition();
+    
     bool IsDone();
     sf::Vector2u GetWindowSize();
     

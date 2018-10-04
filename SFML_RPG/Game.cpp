@@ -12,9 +12,14 @@ Game::Game() : window("SFML RPG", sf::Vector2u(1280,1280))
 {
     RestartClock();
     srand(time(NULL));
+    
     map.loadAssets();
     map.readFile("level1.txt", 8, 8);
     map.GetGrid(mapGrid);
+    
+    position = window.GetMousePosition();
+    
+    mainPlayer.LoadAssets();
 }
 
 Game::~Game() {}
@@ -33,28 +38,32 @@ Window* Game::GetWindow()
     return &window;
 }
 
-
-
 void Game::HandleInput()
 {
-
+    position = window.GetMousePosition();
+    std::cout << "x: " << position.x / 160 << " y: " << position.y / 160 << std::endl;
     
+    // Place chacter in this position:
+    std::cout << "x: " << (position.x / 160) * 80 << " y: " << (position.y / 160) * 80 << std::endl;
+    
+
 }
 void Game::Update()
 {
     window.Update();
-
 }
 void Game::Render()
 {
     window.BeginDraw();
     
-    //window.Draw(mainPlayer.sprite);
-    
+    //
+    // Draws Map
+    // Perhaps move into another Method.
+    //
     for(int i = 0; i < 8; i++)
         for(int j = 0; j < 8; j++)
         {
-            std::cout << mapGrid[i][j] << std::endl;
+            //std::cout << mapGrid[i][j] << std::endl;
             if(mapGrid[i][j] == 0)
             {
                 //why is x and y reversed here? lol maybe setposition is (y,x)? idk
@@ -69,8 +78,8 @@ void Game::Render()
             }
         }
     
+        window.Draw(mainPlayer.sprite);
+    
     window.EndDraw();
 }
 
-Window *GetWindow();
-void RestartClock();

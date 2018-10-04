@@ -17,6 +17,7 @@
 #include <string>
 #include <SFML/Graphics.hpp>
 #include "ResourcePath.hpp"
+#include "AssetManager.hpp"
 
 class Map
 {
@@ -37,7 +38,9 @@ private:
     std::fstream file;
     
     int grid[8][8];
-
+    
+    AssetManager assetManager;
+    
     sf::Texture tileSet;
     
 };

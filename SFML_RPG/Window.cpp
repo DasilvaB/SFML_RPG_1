@@ -76,6 +76,11 @@ void Window::Update()
     }
 }
 
+sf::Vector2i Window::GetMousePosition()
+{
+    sf::Vector2i position = sf::Mouse::getPosition(window);
+    return position;
+}
 
 
 

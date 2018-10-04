@@ -16,6 +16,7 @@ Map::Map()
 void Map::readFile(std::string fileName, int x, int y)
 {
     file.open(fileName);
+    //std::ifstream openfile("level1.txt");
     
     if(!file.is_open())
     {
@@ -41,10 +42,9 @@ void Map::loadAssets()
 {
     std::cout << "Assets loaded" << std::endl;
     
-    if (!tileSet.loadFromFile(resourcePath() + "tileSet1.png"))
-    {
-        std::cout << "Failed to load tileSet1.png" << std::endl;
-    }
+    assetManager.LoadTexture("tileSet1", "tileSet1.png");
+    
+    tileSet = assetManager.GetTexture("tileSet1");
     
     mob1.setTexture(tileSet);
     mob1.setTextureRect(sf::IntRect(64,64,16,16));

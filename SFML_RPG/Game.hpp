@@ -13,6 +13,7 @@
 #include "Window.hpp"
 #include "player.h"
 #include "entity.hpp"
+#include "InputManager.hpp"
 #include "Map.hpp"
 
 class Game {
@@ -33,6 +34,9 @@ private:
     Window window;
     sf::Clock clock;
     sf::Time elapsed;
+    sf::Vector2i position;
+
+    InputManager inputManager;
     
     player mainPlayer;
     Map map;

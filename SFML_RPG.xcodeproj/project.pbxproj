@@ -12,12 +12,13 @@
 		BE14C3B02038AAC3009534A8 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3AE2038AAC3009534A8 /* Window.cpp */; };
 		BE14C3B6203B2505009534A8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3B4203B2505009534A8 /* InputManager.cpp */; };
 		BE14C3E32049CA95009534A8 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3E12049CA95009534A8 /* Map.cpp */; };
-		BE14C3F02049D75B009534A8 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE14C3EF2049D75B009534A8 /* level1.txt */; };
-		BE14C3F22049DEBF009534A8 /* tileSet1.png in Resources */ = {isa = PBXBuildFile; fileRef = BE14C3F12049DEBF009534A8 /* tileSet1.png */; };
+		BE14C3F5204B140C009534A8 /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE14C3F3204B140C009534A8 /* AssetManager.cpp */; };
+		BE249A3520D078AA008AD752 /* tileSet1.png in Resources */ = {isa = PBXBuildFile; fileRef = BE249A3420D078AA008AD752 /* tileSet1.png */; };
 		BE5AE6011F9D9604001BF868 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6001F9D9604001BF868 /* ResourcePath.mm */; };
 		BE5AE6171F9D9649001BF868 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6131F9D9649001BF868 /* player.cpp */; };
 		BE5AE6181F9D9649001BF868 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5AE6161F9D9649001BF868 /* main.cpp */; };
 		BE5AE6351FB11F85001BF868 /* Hero.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5AE6341FB11F85001BF868 /* Hero.png */; };
+		BE74984E20CB0F7B009D6C6A /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE74984D20CB0F7B009D6C6A /* level1.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,9 @@
 		BE14C3B5203B2505009534A8 /* InputManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
 		BE14C3E12049CA95009534A8 /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
 		BE14C3E22049CA95009534A8 /* Map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Map.hpp; sourceTree = "<group>"; };
-		BE14C3EF2049D75B009534A8 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level1.txt; path = "../../../Library/Developer/Xcode/DerivedData/SFML_RPG-bzwbyamhgeoegkbljzrontpoemyv/Build/Products/Debug/level1.txt"; sourceTree = "<group>"; };
-		BE14C3F12049DEBF009534A8 /* tileSet1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tileSet1.png; path = ../../tileSet1.png; sourceTree = "<group>"; };
+		BE14C3F3204B140C009534A8 /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
+		BE14C3F4204B140C009534A8 /* AssetManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AssetManager.hpp; sourceTree = "<group>"; };
+		BE249A3420D078AA008AD752 /* tileSet1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileSet1.png; sourceTree = "<group>"; };
 		BE5AE5FB1F9D9604001BF868 /* SFML_RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFML_RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5AE5FF1F9D9604001BF868 /* SFML_RPG-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML_RPG-Info.plist"; sourceTree = "<group>"; };
 		BE5AE6001F9D9604001BF868 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		BE5AE6141F9D9649001BF868 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		BE5AE6161F9D9649001BF868 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BE5AE6341FB11F85001BF868 /* Hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hero.png; sourceTree = "<group>"; };
+		BE74984D20CB0F7B009D6C6A /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		BE08781B1FB528040015F728 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				BE14C3E22049CA95009534A8 /* Map.hpp */,
 				BE0878231FB528DE0015F728 /* entity.hpp */,
 				BE0878441FCE18A10015F728 /* Enemy.h */,
 				BE5AE6141F9D9649001BF868 /* player.h */,
@@ -68,6 +72,7 @@
 		BE08781C1FB528400015F728 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BE14C3E12049CA95009534A8 /* Map.cpp */,
 				BE5AE6161F9D9649001BF868 /* main.cpp */,
 				BE5AE6131F9D9649001BF868 /* player.cpp */,
 				BE0878181FB3594F0015F728 /* Enemy.cpp */,
@@ -88,7 +93,7 @@
 		BE14C3B22038AE76009534A8 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				BE14C3E22049CA95009534A8 /* Map.hpp */,
+				BE14C3F4204B140C009534A8 /* AssetManager.hpp */,
 				BE14C3B5203B2505009534A8 /* InputManager.hpp */,
 				BE14C3AC2038AA30009534A8 /* Game.hpp */,
 				BE14C3AF2038AAC3009534A8 /* Window.hpp */,
@@ -102,7 +107,7 @@
 				BE14C3AB2038AA30009534A8 /* Game.cpp */,
 				BE14C3AE2038AAC3009534A8 /* Window.cpp */,
 				BE14C3B4203B2505009534A8 /* InputManager.cpp */,
-				BE14C3E12049CA95009534A8 /* Map.cpp */,
+				BE14C3F3204B140C009534A8 /* AssetManager.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -110,7 +115,7 @@
 		BE14C3E42049D487009534A8 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				BE14C3EF2049D75B009534A8 /* level1.txt */,
+				BE74984D20CB0F7B009D6C6A /* level1.txt */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -156,7 +161,7 @@
 		BE5AE6051F9D9604001BF868 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BE14C3F12049DEBF009534A8 /* tileSet1.png */,
+				BE249A3420D078AA008AD752 /* tileSet1.png */,
 				BE5AE6341FB11F85001BF868 /* Hero.png */,
 			);
 			name = Resources;
@@ -221,9 +226,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE14C3F02049D75B009534A8 /* level1.txt in Resources */,
+				BE74984E20CB0F7B009D6C6A /* level1.txt in Resources */,
+				BE249A3520D078AA008AD752 /* tileSet1.png in Resources */,
 				BE5AE6351FB11F85001BF868 /* Hero.png in Resources */,
-				BE14C3F22049DEBF009534A8 /* tileSet1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +261,7 @@
 				BE08781A1FB359500015F728 /* Enemy.cpp in Sources */,
 				BE14C3B6203B2505009534A8 /* InputManager.cpp in Sources */,
 				BE14C3AD2038AA30009534A8 /* Game.cpp in Sources */,
+				BE14C3F5204B140C009534A8 /* AssetManager.cpp in Sources */,
 				BE5AE6011F9D9604001BF868 /* ResourcePath.mm in Sources */,
 				BE5AE6181F9D9649001BF868 /* main.cpp in Sources */,
 			);

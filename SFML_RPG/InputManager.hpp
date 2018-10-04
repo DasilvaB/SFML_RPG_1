@@ -10,7 +10,6 @@
 #define InputManager_hpp
 
 #include <SFML/Graphics.hpp>
-#include "entity.hpp"
 #include "player.h"
 
 enum Direction {

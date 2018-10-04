@@ -5,6 +5,7 @@
 
 #include "entity.hpp"
 #include "ResourcePath.hpp"
+#include "AssetManager.hpp"
 
 class player : public entity
 {
@@ -17,12 +18,16 @@ public:
     
     static void movement();
     
+    void LoadAssets();
+    
 private:
     // Player attributes
     int movementSpeed = 0;
     int attackDamage = 5;
     
     sf::Texture characterTexture;
+    
+    AssetManager assetManager;
     
     sf::Vector2i source;
 
